@@ -1,0 +1,31 @@
+name: "申请添加新卡片"
+description: "提交新的借记卡/信用卡信息"
+title: "Link: <银行名称>-<借记卡/信用卡>-<卡名称>"
+labels: ["new card"]
+body:
+  - type: input
+    id: card_name
+    attributes:
+      label: "名称"
+      description: "请输入卡片的完整名称"
+      placeholder: "例如：XX银行白金信用卡"
+    validations:
+      required: true
+
+  - type: input
+    id: card_image
+    attributes:
+      label: "卡面链接"
+      description: "请提供卡片图片的链接（URL）"
+      placeholder: "例如：https://example.com/card.jpg"
+    validations:
+      required: true
+
+  - type: input
+    id: apply_link
+    attributes:
+      label: "申请链接"
+      description: "请提供申请该卡片的官方链接（URL）"
+      placeholder: "例如：https://bank.com/apply"
+    validations:
+      required: true
